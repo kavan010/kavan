@@ -1,24 +1,77 @@
+:root {
+    --main-color: rgb(0, 0, 0);
+    --background-color: rgb(255, 255, 255);}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-}
+    color: var(--main-color);
+    background-color: var(--background-color);}
 
 .title {
     margin-top: 5%;
     font-size: 70px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 10px;
-}
-
+    margin-bottom: 10px;}
 .counter {
     font-size: 15px;
-    color: #333;
-    margin-top: 20px;
-}
+    color: var(--main-color);
+    margin-top: 20px;}
 
+/*  socials  */
 .socials {
     text-decoration: none;
     padding: 10px;
-    color: black;
+    color: var(--main-color);}
+#youtube-link,
+#github-link,
+#x-link {
+    text-decoration-color: transparent;
+    padding: 10px;
+    color: var(--main-color);
+    transition: color 0.5s;
+    text-decoration: none;
 }
+
+#youtube-link:hover,
+#github-link:hover,
+#x-link:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--main-color);
+}
+
+/*  video collauge  */
+#video-carousel {
+    display: flex;
+    overflow-x: auto;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 25px;}
+#video {
+    border-radius: 16px;
+    flex: 0 0 calc((100vw * 0.5) * 9 / 16); /* maintain 16:9 ratio based on carousel width */
+    height: auto;
+    aspect-ratio: 16 / 9;
+    box-sizing: border-box;
+    margin-right: 16px;}
+#view-more-videos {
+    margin: 150px;
+    color: black;
+    font-size: 20px;}
+#more-videos-link {
+    transition: text-decoration-color 0.3s;
+    text-decoration-color: transparent;
+    color: var(--main-color);
+    font-size: 20px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;}
+#more-videos-link:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--main-color);}
+

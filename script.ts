@@ -7,9 +7,7 @@ function AgeCounter() {
     const age = years / msPerYear;
     const ageElement = document.getElementById("years-counter");
     if (ageElement) {
-        ageElement.textContent = age.toFixed(9) + " years";
+        ageElement.textContent = "I am " + age.toFixed(9) + " years";
     }
 }
 setInterval(AgeCounter, 50);
-
-
