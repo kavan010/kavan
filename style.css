@@ -13,7 +13,14 @@ body {
     font-size: 70px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 10px;}
+    margin-bottom: 10px;
+    background: url('./assets/bg.png') repeat;
+    background-size: contain;
+    --webkit-background-clip: text;
+    --webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
 .counter {
     font-size: 15px;
     color: var(--main-color);
